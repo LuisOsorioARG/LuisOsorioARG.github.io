@@ -2,9 +2,98 @@
 <html lang="en">
   <head>
     <title>Journal APP</title>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+
+    <link rel="stylesheet" type="text/css" href="style.css">
+
   </head>
   <body>
     <div id="root"></div>
-    <h1> HOLA MUNDO </h1>
+
+
+    <h1> Nueva Ficha para Rosita </h1>
+        <hr />
+        <small id="emailHelp" className="form-text text-muted">viernes 14 de Agosto</small>
+        <hr />
+
+        <form className="container">
+
+            <div className="form-group mb-2">
+                <label>Que se le hizo</label>
+                <input 
+                    type="text" 
+                    className="form-control"
+                    placeholder="Se aplica Banio de Luz"
+                    name="title"
+                    autoComplete="off"
+                />
+            </div>
+            <hr />
+            <div className="form-group mb-2">
+              <label>Detalle</label>
+              <textarea 
+                    type="text" 
+                    className="form-control"
+                    placeholder="91 + 82 (11) + 9ml y Ampolla"
+                    rows="3"
+                    name="notes"
+                ></textarea>
+            </div>
+            <hr />
+            
+            <div className="form-group mb-2">
+              <label>Importe</label>
+              <input 
+                  type="number" 
+                  className="form-control"
+                  placeholder="1500"
+                  name="title"
+                  autoComplete="off"
+              />
+            </div>
+
+            <div className="form-group mb-2">
+              <label>Abono</label>
+              <input 
+                  type="number" 
+                  className="form-control"
+                  placeholder="1000"
+                  name="title"
+                  autoComplete="off"
+              />
+            </div>
+
+            <div className="form-group mb-2">
+              <label>Saldo</label>
+              <input 
+                  type="number" 
+                  className="form-control"
+                  placeholder="500"
+                  name="title"
+                  autoComplete="off"
+              />
+            </div>
+            <hr />
+
+            <button
+                type="submit"
+                className="btn btn-outline-primary btn-block"
+            >
+                <i className="far fa-save"></i>
+                <span> Guardar</span>
+            </button>
+
+            <button
+                type="submit"
+                className="btn btn-outline-primary btn-block"
+            >
+                <i className="far fa-save"></i>
+                <span> Cancelar</span>
+            </button>
+
+        </form>
+
+
   </body>
 </html>
